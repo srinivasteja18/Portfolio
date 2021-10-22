@@ -76,8 +76,8 @@ export default function Experience() {
           <Carousel
             data={data}
             time={5000}
-            width="1000px"
-            height="500px"
+            width="870px"
+            height="425px"
             captionStyle={captionStyle}
             radius="10px"
             slideNumber={true}
@@ -90,8 +90,8 @@ export default function Experience() {
             slideBackgroundColor="darkgrey"
             style={{
               textAlign: "center",
-              maxWidth: "1005px",
-              maxHeight: "505px",
+              maxWidth: "875px",
+              maxHeight: "430px",
               padding: "2px",
               border: "1px solid white",
               margin: "40px auto",

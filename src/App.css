@@ -38,6 +38,7 @@ body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   font-size: 1rem;
   top: 0;
+  overflow-x: hidden;
 }
 .Header {
   min-width: 100%;
@@ -300,7 +301,7 @@ body {
 }
 .skills-grid {
   display: grid;
-  grid-template-columns: repeat(3, 100px);
+  grid-template-columns: repeat(3, 80px);
   grid-gap: 3rem;
   margin-bottom: 5rem;
 }
@@ -547,7 +548,7 @@ body {
     align-items: center;
   }
   .contact-card-left {
-    padding: 2.5rem;
+    padding: 1rem;
   }
   .contact-form {
     min-width: 40%;

@@ -22,7 +22,7 @@ export default function Skills() {
           <Skill name="Javascript" pic={javascript} />
           <Skill name="ReactJS" pic={react} />
           <Skill name="C++" pic={cplus} />
-          <Skill name="DataStructures" pic={dsa} />
+          <Skill name="Data Structures" pic={dsa} />
           <Skill name="Algorithms" pic={algo} />
           <Skill name="OOPS" pic={oops} />
           <Skill name="C" pic={c} />
