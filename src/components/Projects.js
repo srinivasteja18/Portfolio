@@ -9,8 +9,8 @@ export default function Experience() {
                     Portfolio Website
                     <br/>
                     <div class="projects-section-buttons">
-                      <a href="https://srinivas-teja-18.netlify.app" target="_blank"><button class="projects-section-button" >View</button></a>
-                      <a href="https://github.com/srinivasteja18/Sorting-Visualiser" target="_blank"><button class="projects-section-button">Code</button></a>
+                      <a href="https://srinivasteja18-portfolio.netlify.app" target="_blank"><button class="projects-section-button" >View</button></a>
+                      <a href="https://github.com/srinivasteja18/Portfolio" target="_blank"><button class="projects-section-button">Code</button></a>
                     </div>
                     
               </div>`,
