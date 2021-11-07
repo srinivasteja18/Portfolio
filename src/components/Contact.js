@@ -1,5 +1,8 @@
-import React from "react";
+import React, { useState } from "react";
 import emailjs from "emailjs-com";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.min.css";
+
 import {
   FaGithub,
   FaInstagram,
@@ -11,8 +14,19 @@ import {
   FaMapMarker,
 } from "react-icons/fa";
 export default function Contact() {
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
   const handleOnClick = (e) => {
     e.preventDefault();
+    if (name === "" || email === "") {
+      toast("Enter the required details", { type: "error" });
+      return;
+    }
+    if (message === "") {
+      toast("Type the message that you want to send", { type: "warning" });
+      return;
+    }
     emailjs
       .sendForm(
         "service_2brpslk",
@@ -22,7 +36,10 @@ export default function Contact() {
       )
       .then((res) => {
         console.log("success");
-        window.location.reload();
+        setName("");
+        setEmail("");
+        setMessage("");
+        toast("Message sent successfully", { type: "success" });
       })
       .catch((err) => {
         console.log(err);
@@ -31,6 +48,7 @@ export default function Contact() {
 
   return (
     <div id="contact" className=" contact-section">
+      <ToastContainer />
       <h1 className="contact-section-h1"> Contact Me</h1>
       <div className="contact-card">
         <div className="contact-card-left">
@@ -91,17 +109,23 @@ export default function Contact() {
               type="text"
               className="contact-section-input"
               name="user_name"
+              value={name}
+              onChange={(e) => setName(e.target.value)}
             />
             <label className="contact-section-label">Your Email Address</label>
             <input
               type="email"
               className="contact-section-input"
               name="user_email"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
             />
             <label className="contact-section-label">Message</label>
             <textarea
               className="contact-section-input"
               name="user_message"
+              value={message}
+              onChange={(e) => setMessage(e.target.value)}
             ></textarea>
             <input type="submit" className="contact-section-button" />
           </div>
