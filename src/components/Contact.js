@@ -36,10 +36,10 @@ export default function Contact() {
       )
       .then((res) => {
         console.log("success");
+        toast("Message sent successfully", { type: "success" });
         setName("");
         setEmail("");
         setMessage("");
-        toast("Message sent successfully", { type: "success" });
       })
       .catch((err) => {
         console.log(err);
