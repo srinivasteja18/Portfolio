@@ -4,6 +4,28 @@ import { Carousel } from "react-carousel-minimal";
 export default function Experience() {
   const data = [
     {
+      image: "https://i.postimg.cc/MGStjLLr/Screenshot-1080.png",
+      caption: `<div class="projects-section-caption">
+                    Clarify-Website for Students
+                    <br/>
+                    <div class="projects-section-buttons">
+                      <a href="https://claarify.herokuapp.com/" target="_blank"><button class="projects-section-button" >View</button></a>
+                      <a href="https://github.com/srinivasteja18/Clarify_A-webiste-for-Students" target="_blank"><button class="projects-section-button">Code</button></a>
+                    </div>
+              </div>`,
+    },
+    {
+      image: "https://i.postimg.cc/q7PQcxRx/Screenshot-1082.png",
+      caption: `<div class="projects-section-caption">
+                    Clarify-Website for Students
+                    <br/>
+                    <div class="projects-section-buttons">
+                      <a href="https://shop-spot.herokuapp.com/" target="_blank"><button class="projects-section-button" >View</button></a>
+                      <a href="https://github.com/srinivasteja18/ShopSpot_Ecommerce-website" target="_blank"><button class="projects-section-button">Code</button></a>
+                    </div>
+              </div>`,
+    },
+    {
       image: "https://i.postimg.cc/yx9LvqQJ/portfolio.png",
       caption: `<div class="projects-section-caption">
                     Portfolio Website
