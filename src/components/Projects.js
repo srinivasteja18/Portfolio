@@ -17,7 +17,7 @@ export default function Experience() {
     {
       image: "https://i.postimg.cc/q7PQcxRx/Screenshot-1082.png",
       caption: `<div class="projects-section-caption">
-                    Clarify-Website for Students
+                    ShoppingSpace-An Ecommerce website
                     <br/>
                     <div class="projects-section-buttons">
                       <a href="https://shop-spot.herokuapp.com/" target="_blank"><button class="projects-section-button" >View</button></a>
