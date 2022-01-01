@@ -17,7 +17,7 @@ export default function Home() {
         <div className="Home_section_content">
           <p className="Home_section_text">Hi, I am</p>
           <p className="Home_section_name">Moparthi Srinivas Teja</p>
-          <p className="Home_section_text">I am a Front End Developer</p>
+          <p className="Home_section_text">I am a Full Stack Web Developer</p>
           <a href="https://drive.google.com/file/d/19_7o-E8bevl_dCP2LcXKf4qVX8wDd5kO/view?usp=sharing">
             <button className="Home_section_resume">
               Resume <FaDownload />
